@@ -1,0 +1,152 @@
+// _header.scss
+// ---------------------------------------------------------------------------//
+
+header{
+	background-color: $lveBlue;
+	//background-color: transparent;
+	color:white; 
+	padding: 0;
+	position: fixed;
+	top:0;
+	width:100%; 
+	z-index: 1000;  
+	-webkit-margin-before-collapse: separate;
+	-webkit-box-shadow: rgba(0,0,0,0.15) 0 6px 10px;
+    box-shadow: rgba(0,0,0,0.08) 0 6px 10px; 
+
+	@media (min-width: 960px){
+		position: fixed; 
+	}
+	
+	#hamMenu{
+		display: none;
+		
+		&:checked + .hamMenuLabel{
+			background-image: url(../img/icons/xMarkWhite.svg);
+		}
+		// &:checked + nav .mainMenu{
+		// 	display: block;  	
+		// }
+		// Placed first in order to not overide later rule 
+		&:checked ~ nav .mainMenu{
+			display: block;
+		}
+		&:checked ~nav{
+		    position: fixed;
+		    bottom: 0;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    background-color: $fadedLveBlue; 
+		    
+		    @media (min-width: 960px){
+		    	position:static; 
+		    	background-color: none;
+		    	display: flex; 
+				flex-direction: row;
+				justify-content: space-between; 
+				& .mainMenu{
+					display: flex;
+					margin-top:0px; 
+					padding:0;
+				}
+		    }
+		}
+	}
+
+	.hamMenuLabel{    
+	    position: absolute;
+	    top: 25px;
+	    right: 25px;
+	    display:inline-block;
+	    width: 30px;
+	    height:30px;
+	    z-index: 10;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    cursor: pointer;
+	    background-image: url(../img/icons/hamburgerMenuWhite.svg);
+	    @media (min-width: 960px){
+	    	display: none;
+	    }
+	}
+
+	nav{
+		@media (min-width: 960px){
+			display: flex; 
+			flex-direction: row;
+			justify-content: space-between; 
+			//align-items: center;
+		}
+		.logo{
+			max-width: 200px;
+    		margin: 0 auto;
+    		padding-bottom: 6px; 
+
+    		@media (min-width: 960px){
+    			margin: 0 ; 
+    		}
+			a{
+			    color: white;
+			    text-decoration: none;
+			    padding: 10px 0px;
+			    text-transform: uppercase;
+			    display: block;
+			    font-size: 26px;
+			    line-height: 18px;
+			    letter-spacing: 1.86px;
+			    font-weight: 600;
+			    text-decoration: none;
+			    vertical-align: -webkit-baseline-middle;
+			    vertical-align: middle;
+			    line-height: 40px;
+			    margin: 6px 15px 0;
+				
+				&:hover{
+					color:black; 
+				}
+			}
+		}
+
+		.mainMenu{
+			text-align:center;
+			display: none;
+			padding: 20px 0 0 0 ; 
+			
+			@media (min-width: 960px){
+				display: flex;
+				margin-top:0px; 
+				padding:0;
+			}
+			
+			a{
+    			color: white;
+			    text-decoration: none;
+			    padding: 10px 0px;
+			    text-transform: uppercase;
+			    display: block;
+			    font-size: 14px;
+			    line-height: 18px;
+			    letter-spacing: 1.86px;
+
+			    font-weight: 600;
+			    text-decoration: none;
+
+			    vertical-align: middle;
+			    line-height: 40px;
+			    margin: 6px 15px 0;
+
+				@media (min-width: 960px){
+					//border-bottom: solid 5px $lveBlue;
+				}
+				&:hover{
+					color:black; 
+					@media (min-width: 960px){
+						color:black; 
+						// border-bottom: solid 5px #4cccd5;
+					}
+				}
+			}
+		}
+	}
+}

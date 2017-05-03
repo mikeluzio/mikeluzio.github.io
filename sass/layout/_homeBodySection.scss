@@ -1,0 +1,134 @@
+// _homeBodySection.scss
+// ---------------------------------------------------------------------------//
+
+
+.visualLead{// Container Wrapper
+	background-color: $lveBlue;
+	
+	//background: url(../img/road2.jpg) no-repeat 50% center fixed;
+	//background: url(../img/road2.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    
+
+    min-height: 530px;
+   	height:calc(90vh);  
+    color:white;
+    position:relative;
+   	transform-origin: center bottom;
+   	transition: transform 0s;  
+   	overflow: hidden;
+   	padding:0;
+   	margin: 0 auto; 
+	//margin: 60px auto;
+
+   	@media (min-width: 960px){
+   		margin: 60px auto;
+   		margin: 0 auto; 
+  //  		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+		// clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+   	}
+   	video{
+   		// display: none;
+   		display: block;
+   		position: absolute;
+		object-fit: cover;
+   		width: 100%;
+   		height:100%;
+
+   		@media (min-width: 960px){
+   			display: block;
+   			position: absolute;
+		  	object-fit: cover;
+		  	width: 100%;
+		  	height: 100%;
+   		}
+   	}
+
+    .container{
+    	position: absolute;
+    	top:80%;
+    	left:50%;
+    	transform: translate(-50%,-50%); 
+    	padding:0;
+    	// width: 80%;
+    	// margin: 60px auto;
+    	text-align: center; 
+ 
+
+    	@media (min-width: 960px){
+   			width: 90%;
+    		//border: solid 1px white;
+    		margin: 0 auto;
+
+	    // 	width: 80%;
+    	// 	margin: 60px auto;
+    	// 	text-align: center;
+   		// }
+   		// video{
+   		// 	width: 100%;
+    	// 	margin: 45px auto;
+    	// 	@media (min-width: 800px){
+    	// 		width: 70%;
+    	// 	}
+   		}
+      button{
+        -webkit-appearance: none;
+        border: 0;
+        display: inline-block;
+        white-space: nowrap;
+        width: auto;
+        padding: 15px 45px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-transition: background 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: background 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-size: 20px;
+        line-height: 20px;
+        background-color: #1f5b7c;
+        margin: 0 auto;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+      }
+	}
+}
+.theJourney{
+  .container{
+    h2{
+      font-size: 2em;
+      text-align: center;
+      padding: 0 0 0px 0;
+      text-transform: uppercase;
+    }
+    .shortHr{
+      width: 90px;
+      margin: 15px auto 30px auto;
+      border: solid 3px black;
+    }
+  }
+}
+.social{
+  background-color: $lveBlue;
+  .container{ 
+    text-align: center;
+    h2{
+      font-size: 2em;
+      text-align: center;
+      padding: 0 0 0px 0;
+      text-transform: uppercase;
+      color:white; 
+    }
+    .shortHr{
+      width: 90px;
+      margin: 15px auto 30px auto;
+      border: solid 3px white;
+    }
+  }
+}

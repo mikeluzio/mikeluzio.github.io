@@ -1,0 +1,29 @@
+// _footer.scss
+// ---------------------------------------------------------------------------//
+
+footer{
+	background-color:$lveBlue; 
+	color:white; 
+	text-align: center;
+	padding: 2em 0;
+	p{
+	    font-size: 12px;
+	    font-weight: bold;
+	    text-transform: uppercase;
+
+		a{
+			color:white;
+			text-decoration:none;
+			
+			img{
+				vertical-align: middle;
+			    width: 11px;
+			    height: 11px;
+			    margin-left: 3px;
+			}
+			&:hover{
+				color:black; 
+			}
+		}
+	}
+}
