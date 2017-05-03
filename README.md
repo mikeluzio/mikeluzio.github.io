@@ -1,11 +1,13 @@
-# Project Title 
+# Mike Luzio Personal Brand Website
 
 ---
 
 Author(s): Robert Neal 
 
-Description: This is a simple template I use to start a project.  
+Description: Website made for Entrepernuer Mike Luzio to showcase his personal brand 
 
-Project Status : In Progress
+Project Status : In Development
 
-GitHub Pages Link - https://robneal.github.io/
+GitHub Pages Link - https://robneal.github.io/mikeluzio
+
+Wordpress/Digital Oceean Link  - 

@@ -610,7 +610,60 @@ header {
       .visualLead .container {
         width: 90%;
         margin: 0 auto; } }
-    .visualLead .container button {
+    .visualLead .container a {
+      text-decoration: none; }
+      .visualLead .container a button {
+        -webkit-appearance: none;
+        border: 0;
+        display: inline-block;
+        white-space: nowrap;
+        width: auto;
+        padding: 15px 45px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-transition: background 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: background 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-size: 20px;
+        line-height: 20px;
+        background-color: #1f5b7c;
+        margin: 0 auto;
+        display: block;
+        font-size: 16px;
+        font-weight: bold; }
+      .visualLead .container a:hover button {
+        background-color: black; }
+
+.theJourney .container h2 {
+  font-size: 2em;
+  text-align: center;
+  padding: 0 0 0px 0;
+  text-transform: uppercase; }
+.theJourney .container .shortHr {
+  width: 90px;
+  margin: 15px auto 30px auto;
+  border: solid 3px black; }
+.theJourney .container .episodeList {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .theJourney .container .episodeList .episode {
+    margin: 20px auto 40px auto;
+    width: 280px; }
+    .theJourney .container .episodeList .episode img {
+      height: 160px;
+      border: solid 1px black;
+      width: 100%; }
+    .theJourney .container .episodeList .episode p {
+      font-size: 0.7em;
+      font-weight: 300;
+      text-align: left;
+      margin: 10px auto; }
+    .theJourney .container .episodeList .episode button {
       -webkit-appearance: none;
       border: 0;
       display: inline-block;
@@ -633,16 +686,6 @@ header {
       font-size: 16px;
       font-weight: bold; }
 
-.theJourney .container h2 {
-  font-size: 2em;
-  text-align: center;
-  padding: 0 0 0px 0;
-  text-transform: uppercase; }
-.theJourney .container .shortHr {
-  width: 90px;
-  margin: 15px auto 30px auto;
-  border: solid 3px black; }
-
 .social {
   background-color: #1F5B7C; }
   .social .container {
@@ -657,6 +700,87 @@ header {
       width: 90px;
       margin: 15px auto 30px auto;
       border: solid 3px white; }
+    .social .container .socialMediaGroup {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; }
+      @media (min-width: 760px) {
+        .social .container .socialMediaGroup {
+          flex-direction: row; } }
+      .social .container .socialMediaGroup .socialMediaItem img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: solid 1px white; }
+      .social .container .socialMediaGroup .socialMediaItem p {
+        margin: 10px auto; }
+
+.contact .container {
+  text-align: center; }
+  .contact .container h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0 0 0px 0;
+    text-transform: uppercase;
+    color: black; }
+  .contact .container .shortHr {
+    width: 90px;
+    margin: 15px auto 30px auto;
+    border: solid 3px black; }
+  .contact .container form {
+    margin-top: 10px;
+    padding: 30px 0; }
+    @media screen and (min-width: 760px) {
+      .contact .container form {
+        display: flex;
+        justify-content: center; } }
+    .contact .container form .contactFormInfo, .contact .container form .contactFormMessage {
+      width: 100%;
+      text-align: left; }
+      @media screen and (min-width: 760px) {
+        .contact .container form .contactFormInfo, .contact .container form .contactFormMessage {
+          padding: 0 30px; } }
+      .contact .container form .contactFormInfo label, .contact .container form .contactFormMessage label {
+        display: block;
+        margin: 0 0 5px 0; }
+      .contact .container form .contactFormInfo input, .contact .container form .contactFormInfo textarea, .contact .container form .contactFormMessage input, .contact .container form .contactFormMessage textarea {
+        height: 32px;
+        display: block;
+        width: 100%;
+        margin: 0 0 15px 0;
+        background: #fafafa;
+        border: solid 1px #e9e9e9;
+        padding: 5px 10px;
+        color: #848484; }
+        @media screen and (min-width: 960px) {
+          .contact .container form .contactFormInfo input, .contact .container form .contactFormInfo textarea, .contact .container form .contactFormMessage input, .contact .container form .contactFormMessage textarea {
+            height: 64px; } }
+      .contact .container form .contactFormInfo textarea, .contact .container form .contactFormMessage textarea {
+        height: 195px; }
+        @media screen and (min-width: 960px) {
+          .contact .container form .contactFormInfo textarea, .contact .container form .contactFormMessage textarea {
+            height: 290px; } }
+      .contact .container form .contactFormInfo button, .contact .container form .contactFormMessage button {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 12px 42px;
+        border: solid 3px #1F5B7C;
+        background: #1F5B7C;
+        color: white;
+        min-width: 140px;
+        text-align: center;
+        border-radius: 3px;
+        display: block;
+        margin: 0px auto;
+        width: 100%; }
+        .contact .container form .contactFormInfo button:hover, .contact .container form .contactFormMessage button:hover {
+          color: #1F5B7C;
+          background: white;
+          border: solid 3px #1F5B7C; }
+        @media screen and (min-width: 760px) {
+          .contact .container form .contactFormInfo button, .contact .container form .contactFormMessage button {
+            width: 60%;
+            margin: 0px 0 0 auto; } }
 
 footer {
   background-color: #1F5B7C;
