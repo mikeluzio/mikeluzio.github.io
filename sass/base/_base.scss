@@ -1,7 +1,7 @@
 // _base.scss
 // ---------------------------------------------------------------------------//
 
-//Core Partials
+//Core Base Partials
 @import "_normalize";
 @import "_tagPreset";
 @import "_variables";
@@ -9,10 +9,22 @@
 
 body {
  	background-color:white;
-  	font-family: $mainFont;
-  	font-size: 18px;
-  	line-height: 1.6;
-	color: black;
+  	font-family: $main-font;
+  	font-size: $base-font-size;
+  	line-height:$base-line-height;
+	color: $base-text-color;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+a{
+	color:$base-link-color;
+	text-decoration: none;
+	cursor: pointer;
+   	touch-action: manipulation;
+   	-ms-touch-action: manipulation;
+	&:hover{
+		color:$base-hover-color;  
+	}
 }

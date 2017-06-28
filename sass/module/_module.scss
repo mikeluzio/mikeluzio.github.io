@@ -1,10 +1,20 @@
 // _module.scss
-
 // ---------------------------------------------------------------------------//
 
+//Core Module Partials
+//@import "module-partial";
+@import "wrapper";
+@import "site-header"; 
+@import "page-section"; 
+@import "visual-lead"; 
+@import "lve-bio"; 
+@import "seperator"; 
+@import "_lve"; 
 
-    // .shortHr{
-    //   width: 90px;
-    //   margin: 15px auto 30px auto;
-    //   border: solid 3px white;
-    // }
+
+
+
+//@import "footer";
+//@import "header"; 
+//@import "homeBodySection";
+

@@ -2,7 +2,7 @@
 // ---------------------------------------------------------------------------//
 
 header{
-	background-color: $lveBlue;
+	background-color: $lve-blue;
 	//background-color: transparent;
 	color:white; 
 	padding: 0;
@@ -37,7 +37,7 @@ header{
 		    top: 0;
 		    left: 0;
 		    right: 0;
-		    background-color: $fadedLveBlue; 
+		    background-color: $lve-blue--faded; 
 		    
 		    @media (min-width: 960px){
 		    	position:static; 

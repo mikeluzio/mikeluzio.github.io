@@ -21,63 +21,41 @@
 
 <body>
 	
-
-	<header class="site-header">
+	<header>
 		
-		<div class="site-header__menu-icon">
-        	<div class="site-header__menu-icon__middle"></div>
-      	</div>
+		<input type="checkbox" id="hamMenu"/>
+		<label class="hamMenuLabel" for="hamMenu"></label>
+		
+		<nav class="wrapper nav-menu">
 
-		<nav class="wrapper site-header__nav">
-			
-			<a class="site-header__logo" href="index.html">
-				Mike Luzio
-			</a>
+		
+			<a class="nav-menu__logo" href="">Mike Luzio</a>
 
-			<ul class="site-header__main-menu">
-				<a class="site-header__main-menu__links" href="#lve-bio">About</a>
-				<a class="site-header__main-menu__links" href="#lve">Luzio vs. Everyone</a>
-				<a class="site-header__main-menu__links" href="#follow-me">Folow Me</a>
-				<a class="site-header__main-menu__links" href="#connect">Connect</a>
+			<ul class="nav-menu__main-menu">
+				<a class="nav-menu__main-menu__menu-link" href="index.html#theJourney">52 American Success Stories</a>
+				<a class="nav-menu__main-menu__menu-link" href="index.html#social">Social</a>
+				<a class="nav-menu__main-menu__menu-link" href="index.html#contact">Contact</a>
+				<a class="nav-menu__main-menu__menu-link" href="">About</a>
 			</ul>
-		</nav>
-
+		</nav>	
+	
 	</header>
 
+	<section class="containerWrapper visualLead" id="visualLead">
+		<!-- Video visualLead  --> 
+		<video id="heroLoop" src="media/mikeVideo.mp4" autoplay="" loop="" muted="" poster=""></video>
+		<section class="container">
 
-	<section class="visual-lead">
-		<img class="visual-lead__image" src="img/luzio-visual-lead--small.png" />
-		<a class="visual-lead__play-btn" href=""></a> 
-	</section>
-
-	
-	<section class="lve-bio page-section page-section--small-padding" id="lve-bio">
-		<section class="wrapper">
-			<h2 class="lve-bio__title"> Mike Luzio, Winning Against The Odds</h2>
-			<hr class="seperator__long seperator__long--thin">
-			<p class="lve-bio__description">
-				Luzio vs Everybody is a concept as much as it
-			 	is a brand; it is a philosophy as well as a tool;
-			 	it is a mindset through which you can approach your
-			 	future business endeavors, and now it is a direct 
-			 	channel to my motivation and my proven methods 
-			 	for success.
-
-			 	<a class="lve-bio__read-more" href="#">  Read More >> </a>
-			 </p>
+			<a href=""><button>Follow The Journey</button></a>
 
 		</section>
 	</section>
-
-
-
-	<section class="lve page-section page-section--small-padding page-section--black" id="lve" > 
-		<section class="wrapper">
+	
+	<section class="containerWrapper theJourney" id="theJourney" > 
+		<section class="container">
+			<h2> Mike Luzio, Winning Against The Odds</h2>
 			
-			<h2 class="page-section__section-title page-section__section-title--centered"> Luzio Vs. Everybody</h2>
-			<hr class="seperator__short seperator__short--fat seperator__short--white">
-			
-			<p class="lve__description">
+			<p>
 				Luzio vs Everybody is a concept as much as it
 			 	is a brand; it is a philosophy as well as a tool;
 			 	it is a mindset through which you can approach your
@@ -86,23 +64,10 @@
 			 	for success.
 			 </p>
 
-			 <h3>52 American Success Stories</h3>
-
-			 <div class="lve__featured-episodes">
-			 	<div class="lve__featured-episodes__episode">
-			 		<h4 class="">52 American Succuess Stories - Episode 3 Gillian Shaw</h4>
-			 	</div>
-			 	<div class="lve__featured-episodes__episode">
-			 		
-			 	</div>
-
-			 </div>
-
-
-<!-- 			<h2> 52 American Success Stories </h2>
-			<hr class="shortHr"/> -->
+			<h2> 52 American Success Stories </h2>
+			<hr class="shortHr"/>
 			
-<!-- 			<div class="episodeList">
+			<div class="episodeList">
 
 				<div class="episode">
 					<h4>52 American Succuess Stories - Episode 3 Gillian Shaw</h4>
@@ -163,11 +128,10 @@
 					</p>
 					<button>Watch on YouTube</button>
 				</div>
+				
 			</div>
-			 -->
 		</section>
 	</section>
-
 
 	<section class="containerWrapper social" id="social" > 
 		<section class="container">
@@ -200,7 +164,6 @@
 
 		</section>
 	</section>
-
 
 	<section class="containerWrapper contact" id="contact" > 
 		<section class="container">
@@ -236,6 +199,7 @@
 
 
 
+
 	<footer class="">
 		<section class="container" >
 			<p> Mike Luzio &copy; 2017 | Site by 
@@ -249,10 +213,10 @@
 
 	
 	
-	<!-- jQuery Google CDN  -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- jQuery Google CDN  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 
-	<!-- My Javascript-->
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- My Javascript
+	<script type="text/javascript" src=" "></script>-->
 </body>
 </html>

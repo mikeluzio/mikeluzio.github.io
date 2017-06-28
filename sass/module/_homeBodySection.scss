@@ -3,7 +3,7 @@
 
 
 .visualLead{// Container Wrapper
-	background-color: $lveBlue;
+	background-color: $lve-blue;
 	
 	//background: url(../img/road2.jpg) no-repeat 50% center fixed;
 	//background: url(../img/road2.jpg) no-repeat center center fixed; 
@@ -179,7 +179,7 @@
 
 
 .social{
-  background-color: $lveBlue;
+  background-color: $lve-blue;
   .container{ 
     text-align: center;
     h2{
@@ -281,8 +281,8 @@
             text-transform: uppercase;
             font-weight: 600;
             padding: 12px 42px; 
-            border: solid 3px $lveBlue;
-            background: $lveBlue;
+            border: solid 3px $lve-blue;
+            background: $lve-blue;
             color:white; 
             min-width:140px;
             text-align: center;
@@ -291,9 +291,9 @@
             margin: 0px auto;
             width: 100%;
           &:hover{
-            color: $lveBlue; 
+            color: $lve-blue; 
             background:white;
-            border: solid 3px $lveBlue;
+            border: solid 3px $lve-blue;
           }
           @media screen and (min-width:760px ){
             width:60%;

@@ -2,17 +2,37 @@
 
 // ---------------------------------------------------------------------------//
 
-@import "https://fonts.googleapis.com/css?family=Roboto:100,300i,400,400i,700";
-$mainFont : 'Roboto', sans-serif;
-
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300i,400,400i,700,900";
+@import 'https://fonts.googleapis.com/css?family=Anton|Bowlby+One';
 
 // Main Colors ---------------- / 
-$lveBlue      : #1F5B7C;
-$fadedLveBlue : rgba(31, 91, 124, 0.96); 
+
+// Main Colors ---------------- / 
+$lve-blue      		: #1F5B7C;
+$lve-blue--faded 	: rgba(31, 91, 124, 0.76); 
+$lve-lt-blue		: #08a5cb; 
+
 
 // Secondary Colors ---------- / 
-// $purple        : #3E2B3D;
+$light-gray        	: #EFEFEF;
+$warning-red		: #790000; 
+$ltBlack			: #3a3a3a;
+$warning-yellow		: #fff554;
+
+
+// Base Styles --------------- /
+$main-font 			: 'Roboto', sans-serif;
+$base-font-size 	: 16px; 
+$base-line-height	: 1.6; 
+$base-text-color	: black;
+$base-link-color	: $lve-blue; 
+$base-hover-color	: black;
 
 
 // Breakpoints --------------- / 
-//$mobileSmall   : 320;
+$xsm-breakpoint   			: 320px;
+$sm-breakpoint				: 480px; 
+$md-breakpoint				: 760px; 
+$lg-breakpoint				: 960px; 
+$sm-laptop-breakpoint		: 1024px; 
+$md-laptop-breakpoint		: 1400px; 
