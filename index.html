@@ -165,15 +165,17 @@
 			<h2>Send Us A Message</h2>
 			<hr class="shortHr"/>
 			
-			<form class="contactForm" action="" method="post">
+
+
+			<form class="contactForm" action="https://formspree.io/bobbyn28@yahoo.com" method="POST">
 				
 
 				<div class="contactFormInfo">
 					<label for="name">Name</label>
-					<input type="text" id="name" name="customer_name">
+					<input type="text" id="name" name="name">
 					
 					<label for="email">Email Address</label>
-					<input type="email" id="email" name="customer_email">
+					<input type="email" id="email" name="_replyto">
 
 					<label for="messageSubject">Subject</label>
 					<input type="text" id="messageSubject" name="customer_messageSubject">
@@ -183,7 +185,7 @@
 					<label for="message">Question or Comment</label>
 					<textarea id="message" name="customer_message"></textarea>
 					
-					<button type="submit">Send</button>
+					<input type="submit" value="Send">
 				</div>
 
 			</form>
