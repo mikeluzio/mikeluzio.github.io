@@ -3,5 +3,83 @@
 		text-align: center; 
 		width:90%; 
 		margin: 0 auto; 
+		padding-bottom: 90px;
 	}
+
+	&__featured-episodes{
+
+		// display: flex;
+  		//flex-wrap: wrap;
+     	//justify-content: center;
+     	//flex-direction: column;
+     	//flex-basis: auto;
+
+    	@include at-media-breakpoint(720px) {
+    		display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			flex-direction: row;
+			flex-basis: auto;
+    	}
+
+		&__episode{
+			width: 100%; 
+			text-align:right;
+			padding:60px 30px; 
+			//border: solid 1px white; 
+			background-color: cadetblue;
+			@include at-media-breakpoint(720px) {
+				width:50%; 
+			}
+
+
+			&__title{
+				color: #ffffff;
+			    letter-spacing: -0.02em;
+			    font-size: 60px;
+			    line-height: 0.85;
+			    font-weight: 700;
+			    text-transform: uppercase;
+			}
+
+			&__sub-title{
+			    text-transform: uppercase;
+			    padding: 20px 0 20px 0;
+			    margin: 20px 0;
+			    font-weight: 400;
+			}
+
+			a{
+				font-weight: 400;
+			    text-transform: uppercase;
+			    font-size: .8em;
+			}
+
+			&:last-child{
+				text-align: left;
+				background-color: darksalmon;
+
+			}
+		}
+	}
+
+	&__subcribe{
+		text-align: center;
+		padding-top:90px;
+		padding-bottom: 90px;  
+
+		p{
+			//text-transform: uppercase;
+			padding: 20px 0 20px 0;
+			margin: 0px 0;
+			font-weight: bold;
+		}
+
+		.btn{
+			font-weight:bold;
+			text-transform: uppercase;
+			font-size: 1em;
+		}
+	}
+
 }

@@ -523,8 +523,8 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Bowlby One', cursive;
     font-size: 24px;
+    font-weight: bolder;
     line-height: 21px;
     letter-spacing: .5px;
     vertical-align: -webkit-baseline-middle;
@@ -625,9 +625,11 @@ a {
   .page-section--small-padding {
     padding-top: 25px;
     padding-bottom: 25px; }
-  .page-section--small-padding {
+  .page-section--medium-padding {
     padding-top: 50px;
     padding-bottom: 50px; }
+  .page-section--no-bottom-padding {
+    padding-bottom: 0px; }
   .page-section--blue {
     background-color: #1F5B7C;
     color: white; }
@@ -638,9 +640,41 @@ a {
     text-transform: uppercase;
     font-size: 35px;
     padding: 25px 0 10px 0;
-    font-family: 'Bowlby One', cursive; }
+    /* font-family: 'Bowlby One', cursive; */
+    color: #ffffff;
+    /* letter-spacing: -0.02em; */
+    /* font-size: 60px; */
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase; }
     .page-section__section-title--centered {
       text-align: center; }
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  -webkit-transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 0.7s ease-out;
+  -ms-transition: background-color 0.7s ease-out;
+  -o-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out; }
+  .btn:hover {
+    color: white;
+    background-color: black; }
+  .btn--youtube {
+    background-color: #ec3f35;
+    color: white;
+    padding: 15px 90px;
+    margin-top: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em; }
+    .btn--youtube:hover {
+      color: #ec3f35;
+      background-color: white; }
 
 .visual-lead {
   margin-top: 60px;
@@ -684,7 +718,9 @@ a {
   text-transform: uppercase;
   font-size: 35px;
   padding: 25px 0 10px 0;
-  font-family: 'Bowlby One', cursive; }
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: uppercase; }
 .lve-bio__description {
   padding: 10px 0;
   font-size: 18px;
@@ -717,7 +753,54 @@ a {
 .lve__description {
   text-align: center;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 90px; }
+@media (min-width: 720px) {
+  .lve__featured-episodes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    flex-basis: auto; } }
+.lve__featured-episodes__episode {
+  width: 100%;
+  text-align: right;
+  padding: 60px 30px;
+  background-color: cadetblue; }
+  @media (min-width: 720px) {
+    .lve__featured-episodes__episode {
+      width: 50%; } }
+  .lve__featured-episodes__episode__title {
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    font-size: 60px;
+    line-height: 0.85;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .lve__featured-episodes__episode__sub-title {
+    text-transform: uppercase;
+    padding: 20px 0 20px 0;
+    margin: 20px 0;
+    font-weight: 400; }
+  .lve__featured-episodes__episode a {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .8em; }
+  .lve__featured-episodes__episode:last-child {
+    text-align: left;
+    background-color: darksalmon; }
+.lve__subcribe {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px; }
+  .lve__subcribe p {
+    padding: 20px 0 20px 0;
+    margin: 0px 0;
+    font-weight: bold; }
+  .lve__subcribe .btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em; }
 
 .hide-me {
   display: none; }
