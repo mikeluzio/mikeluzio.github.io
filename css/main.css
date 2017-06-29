@@ -766,7 +766,12 @@ a {
   width: 100%;
   text-align: right;
   padding: 60px 30px;
-  background-color: cadetblue; }
+  background-color: cadetblue;
+  background: url("../img/luzio-sarrar.jpg") no-repeat 50% center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   @media (min-width: 720px) {
     .lve__featured-episodes__episode {
       width: 50%; } }
@@ -788,7 +793,12 @@ a {
     font-size: .8em; }
   .lve__featured-episodes__episode:last-child {
     text-align: left;
-    background-color: darksalmon; }
+    background-color: darksalmon;
+    background-image: url("../img/luzio-diamond-back.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
 .lve__subcribe {
   text-align: center;
   padding-top: 90px;

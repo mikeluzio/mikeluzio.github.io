@@ -28,6 +28,16 @@
 			padding:60px 30px; 
 			//border: solid 1px white; 
 			background-color: cadetblue;
+			background: url("../img/luzio-sarrar.jpg") no-repeat 50% center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+
+
+
+
+
 			@include at-media-breakpoint(720px) {
 				width:50%; 
 			}
@@ -58,6 +68,12 @@
 			&:last-child{
 				text-align: left;
 				background-color: darksalmon;
+				background-image: url("../img/luzio-diamond-back.png"); 
+				//no-repeat 50% center; 
+  				-webkit-background-size: cover;
+  				-moz-background-size: cover;
+  				-o-background-size: cover;
+  				background-size: cover;
 
 			}
 		}
