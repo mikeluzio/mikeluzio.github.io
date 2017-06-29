@@ -794,7 +794,9 @@ a {
   .lve__featured-episodes__episode:last-child {
     text-align: left;
     background-color: darksalmon;
-    background-image: url("../img/luzio-diamond-back.png");
+    background-image: url("../img/luzio-pool.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
