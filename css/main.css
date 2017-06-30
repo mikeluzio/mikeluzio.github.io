@@ -439,6 +439,12 @@ button:focus, button:hover {
 button {
   border: none; }
 
+input:focus, button:hover {
+  outline: none; }
+
+input {
+  border: none; }
+
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -621,7 +627,8 @@ a {
 
 .page-section {
   padding: 90px 0px;
-  background-color: white; }
+  background-color: white;
+  color: black; }
   .page-section--small-padding {
     padding-top: 25px;
     padding-bottom: 25px; }
@@ -642,8 +649,6 @@ a {
     padding: 25px 0 10px 0;
     /* font-family: 'Bowlby One', cursive; */
     color: inherit;
-    /* letter-spacing: -0.02em; */
-    /* font-size: 60px; */
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase; }
@@ -674,7 +679,19 @@ a {
     font-size: 1em; }
     .btn--youtube:hover {
       color: #ec3f35;
-      background-color: white; }
+      background-color: black; }
+  .btn--connect-form {
+    background-color: black;
+    color: white;
+    padding: 15px 90px;
+    margin-top: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center; }
+    .btn--connect-form:hover {
+      color: #ec3f35;
+      background-color: black; }
 
 .visual-lead {
   margin-top: 60px;
@@ -721,11 +738,16 @@ a {
   line-height: 1.1;
   font-weight: 700;
   text-transform: uppercase; }
+  .lve-bio__title--centered {
+    text-align: center; }
 .lve-bio__description {
-  padding: 10px 0;
-  font-size: 18px;
+  padding: 20px 0px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
 .lve-bio__read-more {
   font-weight: 700;
   display: inline-block;
@@ -786,7 +808,9 @@ a {
     text-transform: uppercase;
     padding: 20px 0 20px 0;
     margin: 20px 0;
-    font-weight: 400; }
+    color: white;
+    font-size: 24px;
+    font-weight: bold; }
   .lve__featured-episodes__episode a {
     font-weight: 400;
     text-transform: uppercase;
@@ -814,6 +838,9 @@ a {
     text-transform: uppercase;
     font-size: 1em; }
 
+@media (min-width: 720px) {
+  .follow-me__title {
+    font-size: 50px; } }
 .follow-me__social-group {
   margin-top: 60px;
   display: flex;
@@ -826,24 +853,81 @@ a {
       flex-direction: row; } }
   .follow-me__social-group__item {
     display: block;
-    color: black;
-    text-align: center; }
+    color: white;
+    text-align: center;
+    margin: 10px auto; }
     .follow-me__social-group__item__logo {
       display: block;
       width: 125px;
       height: 125px;
       border-radius: 125px;
-      background-color: coral;
+      background-color: white;
       margin: 0 auto 0 auto; }
       .follow-me__social-group__item__logo:hover {
         background-color: darkcyan; }
+      .follow-me__social-group__item__logo--instagram:hover {
+        background-color: #125688; }
+      .follow-me__social-group__item__logo--youtube:hover {
+        background-color: #e52d27; }
+      .follow-me__social-group__item__logo--facebook:hover {
+        background-color: #3b5a99; }
+      .follow-me__social-group__item__logo--linkedin:hover {
+        background-color: #0d7bb7; }
     .follow-me__social-group__item__text {
       margin-top: 15px;
       margin-bottom: 30px;
       line-height: 1.6em;
       text-align: center;
-      font-size: 20px;
-      font-weight: 500; }
+      font-size: 16px;
+      font-weight: bold;
+      max-width: 320px;
+      margin: 15px auto;
+      padding: 0 15px; }
+
+@media (min-width: 760px) {
+  .connect__form {
+    display: flex; } }
+.connect__form__message-info {
+  width: 100%; }
+  @media (min-width: 760px) {
+    .connect__form__message-info {
+      padding: 0 30px; } }
+  .connect__form__message-info label {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold; }
+  .connect__form__message-info input {
+    height: 50px;
+    display: block;
+    width: 100%;
+    margin: 0 0 15px 0;
+    background: #fafafa;
+    border: solid 1px #e9e9e9;
+    padding: 5px 10px;
+    color: #848484; }
+.connect__form__message-content {
+  width: 100%; }
+  @media (min-width: 760px) {
+    .connect__form__message-content {
+      padding: 0 30px; } }
+  .connect__form__message-content label {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold; }
+  .connect__form__message-content textarea {
+    height: 256px;
+    display: block;
+    width: 100%;
+    margin: 0 0 15px 0;
+    background: #fafafa;
+    border: solid 1px #e9e9e9;
+    padding: 5px 10px;
+    color: #848484; }
+  .connect__form__message-content input {
+    margin-left: auto;
+    display: block; }
 
 .hide-me {
   display: none; }

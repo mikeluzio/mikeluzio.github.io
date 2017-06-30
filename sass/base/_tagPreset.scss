@@ -35,3 +35,10 @@ button:focus, button:hover{
 button{
 	border:none;
 }
+
+input:focus, button:hover{
+	outline:none;
+}
+input{
+	border:none;
+}

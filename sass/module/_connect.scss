@@ -1,0 +1,69 @@
+.connect{
+	&__form{
+		@include at-media-breakpoint(760px) {
+			display: flex;
+			//justi
+		}
+
+
+		&__message-info{
+			width: 100%;
+			
+			@include at-media-breakpoint(760px) {
+				padding:0 30px; 
+			}
+			
+			label{
+				display: block;
+				margin: 0 0 10px 0;
+				font-size: 18px;
+			    font-weight: bold;
+			    //text-transform: uppercase;
+			}
+			
+			input{
+				height: 50px;
+			    display: block;
+			    width: 100%;
+			    margin: 0 0 15px 0;
+			    background: #fafafa;
+			    border: solid 1px #e9e9e9;
+			    padding: 5px 10px;
+			    color: #848484;
+			}
+		}
+
+		&__message-content{
+			width: 100%;
+
+			@include at-media-breakpoint(760px) {
+				padding:0 30px; 
+			}
+
+			label{
+				display: block;
+				margin: 0 0 10px 0;
+				font-size: 18px;
+			    font-weight: bold;
+			    //text-transform: uppercase;
+			}
+
+			textarea{
+				height: 256px;
+				display: block;
+			    width: 100%;
+			    margin: 0 0 15px 0;
+			    background: #fafafa;
+			    border: solid 1px #e9e9e9;
+			    padding: 5px 10px;
+			    color: #848484;
+			}
+
+			input{
+				margin-left: auto;
+			    display: block;
+			}
+		}
+
+	}
+}

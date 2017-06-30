@@ -1,6 +1,7 @@
 .page-section{
 	padding: 90px 0px;
 	background-color: white;
+	color:black;
 
 	&--small-padding{
 		padding-top: 25px;
@@ -27,18 +28,16 @@
 
 
 	&__section-title{
-		// text-transform: uppercase;
-	 //    font-size: 35px;
-	 //    padding: 25px 0 10px 0;
-	 //    font-family: 'Bowlby One', cursive;
+		//text-transform: uppercase;
+		//font-size: 35px;
+		//padding: 25px 0 10px 0;
+		//font-family: 'Bowlby One', cursive;
 
 		text-transform: uppercase;
 	    font-size: 35px;
 	    padding: 25px 0 10px 0;
 	    /* font-family: 'Bowlby One', cursive; */
 	    color: inherit;
-	    /* letter-spacing: -0.02em; */
-	    /* font-size: 60px; */
 	    line-height: 1.2;
 	    font-weight: 700;
 	    text-transform: uppercase;
