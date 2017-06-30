@@ -643,6 +643,9 @@ a {
   .page-section--black {
     background-color: black;
     color: white; }
+  .page-section--brown {
+    background-color: #221e20;
+    color: white; }
   .page-section__section-title {
     text-transform: uppercase;
     font-size: 35px;
@@ -873,6 +876,11 @@ a {
         background-color: #3b5a99; }
       .follow-me__social-group__item__logo--linkedin:hover {
         background-color: #0d7bb7; }
+      .follow-me__social-group__item__logo__img {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: 24%; }
     .follow-me__social-group__item__text {
       margin-top: 15px;
       margin-bottom: 30px;
@@ -928,6 +936,78 @@ a {
   .connect__form__message-content input {
     margin-left: auto;
     display: block; }
+
+.site-footer {
+  text-align: center; }
+  .site-footer a {
+    color: inherit; }
+    .site-footer a:hover {
+      color: white; }
+  .site-footer__mike {
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 5px;
+    font-weight: bolder; }
+  .site-footer__copyright {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #7E7E7E; }
+  .site-footer__privacy {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #7E7E7E; }
+
+.modal {
+  padding-top: 70px;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .modal__inner {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .modal iframe {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    max-height: 450px;
+    border: 0;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .modal__close {
+    color: #000;
+    background: #adadad;
+    border-radius: 100%;
+    font-size: 30px;
+    line-height: 20px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 5px 3px;
+    text-align: center;
+    font-weight: 700;
+    z-index: 200; }
+  .modal--opened {
+    overflow: hidden; }
+
+.show-me {
+  display: block; }
 
 .hide-me {
   display: none; }

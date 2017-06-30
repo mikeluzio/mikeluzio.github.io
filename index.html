@@ -47,8 +47,15 @@
 
 	<section class="visual-lead">
 		<img class="visual-lead__image" src="img/luzio-visual-lead--small.png" />
-		<a class="visual-lead__play-btn" href=""></a> 
+		<a class="visual-lead__play-btn" href="#"></a> 
 	</section>
+
+	<div class="modal hide-me">
+		<div class="modal__close">×</div> 
+		<div class="modal__inner">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1cekr4HJss4?autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+		</div> 
+	</div>
 
 	
 	<section class="lve-bio page-section page-section--medium-padding page-section--black" id="lve-bio">
@@ -141,7 +148,7 @@
 				
 				<div class="follow-me__social-group__item">
 					<a class="follow-me__social-group__item__logo follow-me__social-group__item__logo--instagram" href="#">
-						
+						<img class="follow-me__social-group__item__logo__img" src="img/logos/instagram.svg" />
 					</a>
 					<p class="follow-me__social-group__item__text">
 						Sit voluptua maluisset cu, case te sit maluisset cu, case noase nonumy propriae.
@@ -149,14 +156,18 @@
 				</div>
 
 				<div class="follow-me__social-group__item" href="#">
-					<a class="follow-me__social-group__item__logo follow-me__social-group__item__logo--youtube" href="#"></a>
+					<a class="follow-me__social-group__item__logo follow-me__social-group__item__logo--youtube" href="#">
+						<img class="follow-me__social-group__item__logo__img" src="img/logos/youtube.svg" />
+					</a>
 					<p class="follow-me__social-group__item__text">
 						Sit voluptua maluisset cu, case nonumy propriae te sit maluisset cu, case noase.
 					</p>
 				</div>
 
 				<div class="follow-me__social-group__item" href="#">
-					<a class="follow-me__social-group__item__logo follow-me__social-group__item__logo--facebook" href="#"></a>
+					<a class="follow-me__social-group__item__logo follow-me__social-group__item__logo--facebook" href="#">
+						<img class="follow-me__social-group__item__logo__img" src="img/logos/facebook.svg" />
+					</a>
 					<p class="follow-me__social-group__item__text">
 						Sit voluptua maluisset cu, case nonumy propriae te sit maluisset cu, propriae.
 					</p>
@@ -165,7 +176,7 @@
 
 				<div class="follow-me__social-group__item">
 					<a class="follow-me__social-group__item__logo follow-me__social-group__item__logo--linkedin" href="#">
-						
+						<img class="follow-me__social-group__item__logo__img" src="img/logos/linkedin.svg" />
 					</a>
 					<p class="follow-me__social-group__item__text">
 						Sit voluptua maluisset cu, case te sit maluisset cu, case noase nonumy propriae.
@@ -201,7 +212,7 @@
 				</div>
 
 				<div class="connect__form__message-content">	
-					<label for="message">Question or Comment</label>
+					<label for="message">Message</label>
 					<textarea id="message" name="message"></textarea>
 					
 					<input class="btn btn--connect-form" type="submit" value="Send">
@@ -214,12 +225,16 @@
 
 
 
-	<footer class="connect page-section page-section--medium-padding  page-section--black">
+	<footer class="site-footer page-section page-section--medium-padding  page-section--brown">
 		<section class="wrapper">
-			<p> Mike Luzio &copy; 2017 | Site by 
-				<a href="https://github.com/robneal/mikeluzio" target="_blank">
-				Robert Neal <img src="img/logos/whiteGithub32px.png" alt="image of github logo"/></a>
+			<p class="site-footer__mike">Mike Luzio</p>
+
+			<p class="site-footer__copyright">
+				&copy; 2017 Mike Luzio. Site by 
+				<a href="http://robneal.me/" target="_blank">Robert Neal</a>
 			</p>
+
+			<p class="site-footer__privacy"> <a>Privacy Policy</a> <!-- | <a>Terms of Use</a>  --></p>
 		</section>
 	</footer>
 
