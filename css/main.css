@@ -664,16 +664,19 @@ a {
   padding: 15px;
   color: black;
   text-align: center;
-  -webkit-transition: background-color 0.7s ease-out;
-  -moz-transition: background-color 0.7s ease-out;
-  -ms-transition: background-color 0.7s ease-out;
-  -o-transition: background-color 0.7s ease-out;
-  transition: background-color 0.7s ease-out; }
+  border: solid 3px white;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out; }
   .btn:hover {
     color: white;
-    background-color: black; }
+    background-color: black;
+    border: solid 3px black; }
   .btn--youtube {
     background-color: #ec3f35;
+    border: solid 3px #ec3f35;
     color: white;
     padding: 15px 90px;
     margin-top: 11px;
@@ -681,7 +684,7 @@ a {
     text-transform: uppercase;
     font-size: 1em; }
     .btn--youtube:hover {
-      color: #ec3f35;
+      color: white;
       background-color: black; }
   .btn--connect-form {
     background-color: black;
@@ -691,10 +694,12 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1em;
-    text-align: center; }
+    text-align: center;
+    border: solid 3px black; }
     .btn--connect-form:hover {
-      color: #ec3f35;
-      background-color: black; }
+      color: rgba(0, 0, 0, 0.75);
+      background-color: white;
+      border: solid 3px black; }
 
 .visual-lead {
   margin-top: 60px;

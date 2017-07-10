@@ -23,8 +23,13 @@ jQuery(document).ready(function($){
 	$(function() {
 		$(".modal__close").click(function(){
 			$(".modal").removeClass("show-me"); 
-			$(".modal").addClass("hide-me"); 
+			$(".modal").addClass("hide-me");
+			//$(".modal").addClass("show-me"); 
+			
+			$(".modal iframe").removeClass("show-me");
+			$(".modal iframe").addClass("hide-me");   
 			$(".modal iframe")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+			
 			$("body").removeClass("modal--opened"); 
 		});
 
@@ -32,7 +37,10 @@ jQuery(document).ready(function($){
 			//this.preventDefault();
 			$(".modal").removeClass("hide-me"); 
 			$(".modal").addClass("show-me"); 
-			//$(".modal iframe").addClass("show-me"); 
+			
+			$(".modal iframe").removeClass("hide-me");
+			$(".modal iframe").addClass("show-me"); 
+			
 			$("body").addClass("modal--opened"); 
 		}); 
 	}); 
