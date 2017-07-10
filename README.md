@@ -4,10 +4,10 @@
 
 Author(s): Robert Neal 
 
-Description: Website made for Entrepernuer Mike Luzio to showcase his personal brand 
+Description: Website made for Multimillionaire and Entrepernuer Mike Luzio to showcase his personal brand Luzio Vs Everybody
 
 Project Status : In Development
 
 GitHub Pages Link - https://robneal.github.io/mikeluzio
 
-Wordpress/Digital Oceean Link  - 
+Wordpress/Digital Oceean Link  - http://mikeluzio.com/

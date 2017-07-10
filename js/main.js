@@ -24,13 +24,15 @@ jQuery(document).ready(function($){
 		$(".modal__close").click(function(){
 			$(".modal").removeClass("show-me"); 
 			$(".modal").addClass("hide-me"); 
+			$(".modal iframe")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 			$("body").removeClass("modal--opened"); 
 		});
 
 		$(".visual-lead__play-btn").click(function(){
-			//this.prventDefault();
+			//this.preventDefault();
 			$(".modal").removeClass("hide-me"); 
 			$(".modal").addClass("show-me"); 
+			//$(".modal iframe").addClass("show-me"); 
 			$("body").addClass("modal--opened"); 
 		}); 
 	}); 
