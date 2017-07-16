@@ -707,14 +707,14 @@ a {
   max-height: 530px;
   position: relative;
   overflow: hidden; }
-  @media (min-width: 1300px) {
+  @media (min-width: 940px) {
     .visual-lead {
       max-height: 100%; } }
   .visual-lead__image {
     max-height: 530px;
     min-height: 130px;
     width: 100%; }
-    @media (min-width: 1300px) {
+    @media (min-width: 940px) {
       .visual-lead__image {
         max-height: 100%; } }
   .visual-lead__play-btn {

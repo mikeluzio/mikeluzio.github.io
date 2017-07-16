@@ -10,4 +10,4 @@ Project Status : In Development
 
 GitHub Pages Link - https://robneal.github.io/mikeluzio
 
-Wordpress/Digital Oceean Link  - http://mikeluzio.com/
+Website  - http://mikeluzio.com/

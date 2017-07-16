@@ -7,7 +7,7 @@
 	//margin-bottom:1px; 
 	//padding-bottom: 1px;
 	
-	@include at-media-breakpoint(1300px) {
+	@include at-media-breakpoint(940px) {
 		max-height:100%; 
 	}
 
@@ -15,7 +15,7 @@
  		max-height:530px; 
  		min-height:130px; 
  		width:100%;
- 		@include at-media-breakpoint(1300px) {
+ 		@include at-media-breakpoint(940px) {
  			max-height:100%; 
  		}
 
